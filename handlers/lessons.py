@@ -50,9 +50,20 @@ def lessons_list_keyboard(current_lesson_id: int):
 
 async def send_lesson(target, lesson: dict):
     hw_block = f"\n\n{lesson['hw_text']}" if lesson.get("hw_text") else ""
-    text = f"{lesson['text']}{hw_block}"
+    caption = f"{lesson['text']}{hw_block}"
     keyboard = lesson_keyboard_before_start(lesson)
-    await target.answer(text, reply_markup=keyboard, parse_mode="HTML",
+
+    if lesson.get("cover"):
+        try:
+            await target.answer_photo(
+                photo=lesson["cover"], caption=caption,
+                reply_markup=keyboard, parse_mode="HTML"
+            )
+            return
+        except Exception:
+            pass
+
+    await target.answer(caption, reply_markup=keyboard, parse_mode="HTML",
                         disable_web_page_preview=True)
 
 
