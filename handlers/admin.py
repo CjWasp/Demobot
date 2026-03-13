@@ -191,3 +191,14 @@ async def exit_admin(message: Message):
     if not is_admin(message.from_user.id):
         return
     await message.answer("Вышли из админки.", reply_markup=main_menu_keyboard())
+
+
+@router.message(F.photo)
+async def get_photo_file_id(message: Message):
+    if not is_admin(message.from_user.id):
+        return
+    file_id = message.photo[-1].file_id
+    await message.answer(
+        f"🖼 <b>file_id фото:</b>\n\n<code>{file_id}</code>",
+        parse_mode="HTML"
+    )
