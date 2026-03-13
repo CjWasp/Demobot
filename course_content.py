@@ -18,7 +18,6 @@ DEMO_LESSONS = [
             "Расскажи о себе — не больше 100 слов. Меньше можно, больше нельзя.\n\n"
             "Это первый шаг к тому, чтобы я понял, с кем работаю 🙂"
         ),
-        "cover": "AgACAgIAAxkBAAM8abO2P3r_1vWaptE_N4ECuzxb1ogAAjEWaxt9DplJuJLIH4zdoIUBAAMCAAN5AAM6BA",
     },
     {
         "id": 2,
@@ -33,7 +32,6 @@ DEMO_LESSONS = [
         "extra_video_label": None,
         "hw_type": None,
         "hw_text": None,
-        "cover": "AgACAgIAAxkBAAM-abO2YaXh-2CmkkQ20kgBd52j7lMAAjIWaxt9DplJHzd1FWN6x4YBAAMCAAN5AAM6BA",
     },
     {
         "id": 3,
@@ -51,7 +49,6 @@ DEMO_LESSONS = [
             "Допиши свой ответ: <i>Что бы ты делал, если бы тебе не нужно было работать?</i>\n\n"
             "Постарайся написать конкретно — не «занимался любимым делом», а именно чем."
         ),
-        "cover": "AgACAgIAAxkBAAM_abO2Yj1_NXAgjcoIVv17tTZp9JwAAjMWaxt9DplJNUuIyGQ17o4BAAMCAAN5AAM6BA",
     },
 ]
 
