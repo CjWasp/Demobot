@@ -103,6 +103,11 @@ async def open_lesson(callback: CallbackQuery):
     if not lesson:
         await callback.answer("Урок не найден.", show_alert=True)
         return
+    # Убираем клавиатуру со списком уроков перед отправкой урока
+    try:
+        await callback.message.edit_reply_markup(reply_markup=None)
+    except Exception:
+        pass
     await send_lesson(callback.message, lesson)
     await callback.answer()
 
