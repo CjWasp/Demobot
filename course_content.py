@@ -17,6 +17,7 @@ DEMO_LESSONS = [
             "✏️ <b>Задание к уроку:</b>\n\n"
             "Расскажи о себе — не больше 100 слов. Меньше можно, больше нельзя 🙂\n\n"
         ),
+        "cover": "AgACAgIAAxkBAAMxabRZyifHxu7AhTc1jbD-Ftq2OrwAAjQTaxuLUahJt02xZMms2awBAAMCAAN5AAM6BA",
     },
     {
         "id": 2,
@@ -31,6 +32,7 @@ DEMO_LESSONS = [
         "extra_video_label": None,
         "hw_type": None,
         "hw_text": None,
+        "cover": "AgACAgIAAxkBAAMzabRZ9DzrxUpBG3qc2nKcXw4xve8AAjoTaxuLUahJuoK2pQ7tw40BAAMCAAN5AAM6BA",
     },
     {
         "id": 3,
@@ -48,13 +50,14 @@ DEMO_LESSONS = [
             "Допиши свой ответ: <i>Что бы ты делал, если бы тебе не нужно было работать?</i>\n\n"
             "Постарайся написать конкретно — не «занимался любимым делом», а именно чем."
         ),
+        "cover": "AgACAgIAAxkBAAM1abRaAAH8PEBVdBBT4QFvcCLPfh8OAAI-E2sbi1GoSYXyb27NMzQNAQADAgADeQADOgQ",
     },
 ]
 
 TOTAL_DEMO_LESSONS = len(DEMO_LESSONS)
 
 DEMO_FINAL_MESSAGE = (
-  "🎉 <b>Ты прошёл демо-версию курса!</b>\n\n"
+    "🎉 <b>Ты прошёл демо-версию курса!</b>\n\n"
     "За эти три урока ты уже сделал больше, чем большинство за всю свою финансовую жизнь. "
     "Не останавливайся — впереди ещё много интересного и, главное, фундаментально полезного.\n\n"
     "В полном курсе тебя ждут:\n"
